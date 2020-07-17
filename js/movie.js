@@ -7,7 +7,7 @@ let imdbId = Qs.parse(location.search, {
 //console.log(imdbId)
 
 
-axios.get(`http://www.omdbapi.com/?apikey=d6513d72&i=${imdbId}`).then(data => {
+axios.get(`https://www.omdbapi.com/?apikey=d6513d72&i=${imdbId}`).then(data => {
   let movieObj = data.data;
   // console.log(movieObj);
   let nopost = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDEFJjA-DeyAReBX0I07U5whR9p-FntQETVA&usqp=CAU'
