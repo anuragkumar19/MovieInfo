@@ -16,7 +16,7 @@ $(document).ready(()=> {
 
 
 function getMovies(q) {
-  axios.get(`http://www.omdbapi.com/?apikey=d6513d72&s=${q}`).then(data => {
+  axios.get(`https://www.omdbapi.com/?apikey=d6513d72&s=${q}`).then(data => {
     let movieArr = data.data.Search;
     //console.log(movieArr);
     let nopost = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDEFJjA-DeyAReBX0I07U5whR9p-FntQETVA&usqp=CAU'
