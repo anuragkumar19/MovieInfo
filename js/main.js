@@ -20,6 +20,7 @@ function getMovies(q) {
     let movieArr = data.data.Search;
     //console.log(movieArr);
     let nopost = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDEFJjA-DeyAReBX0I07U5whR9p-FntQETVA&usqp=CAU'
+    $('#CardCont').html('')
     movieArr.forEach(movie => {
       let movieCard = `
       <div class="card text-center">
